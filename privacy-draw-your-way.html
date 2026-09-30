@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Draw Your Way Privacy Policy - Your privacy matters to us. Learn how we protect your data.">
+    <meta name="robots" content="noindex">
+
+    <title>Draw Your Way - Privacy Policy | DevLastStudio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="draw-your-way-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .app-badge svg {
+            width: 24px;
+            height: 24px;
+            stroke: #06b6d4;
+        }
+
+        .app-badge span {
+            font-weight: 600;
+            color: #38bdf8;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: #22c55e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .highlight-box p {
+            color: var(--color-text-secondary);
+            margin: 0;
+        }
+
+        .no-data-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .no-data-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #22c55e;
+        }
+
+        .privacy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .privacy-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-text-secondary);
+        }
+
+        .check-list li svg {
+            width: 20px;
+            height: 20px;
+            stroke: #22c55e;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">D</div>
+                <span class="logo-text">DevLastStudio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                <li><a href="index.html#features" class="nav-link" data-i18n="navFeatures">Features</a></li>
+                <li><a href="index.html#apps" class="nav-link" data-i18n="navApps">Apps</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Language Selector -->
+                <div class="lang-selector" id="lang-selector">
+                    <button class="lang-btn" id="lang-btn" aria-label="Select language" aria-expanded="false"
+                        aria-haspopup="listbox">
+                        <span id="current-flag">🇬🇧</span>
+                        <span id="current-lang">EN</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown" role="listbox" aria-label="Select language">
+                        <button class="lang-option" data-lang="en" role="option">
+                            <span>🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="de" role="option">
+                            <span>🇩🇪</span> Deutsch
+                        </button>
+                        <button class="lang-option" data-lang="es" role="option">
+                            <span>🇪🇸</span> Español
+                        </button>
+                        <button class="lang-option" data-lang="fr" role="option">
+                            <span>🇫🇷</span> Français
+                        </button>
+                        <button class="lang-option" data-lang="it" role="option">
+                            <span>🇮🇹</span> Italiano
+                        </button>
+                        <button class="lang-option" data-lang="tr" role="option">
+                            <span>🇹🇷</span> Türkçe
+                        </button>
+                    </div>
+                </div>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="app-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                </svg>
+                <span>Draw Your Way</span>
+            </div>
+            <h1 class="page-title" data-i18n="dywPrivacyTitle">Privacy Policy</h1>
+            <p class="page-subtitle" data-i18n="dywPrivacySubtitle">Last updated: September 2026</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+
+        <!-- Highlight Box: No Personal Data -->
+        <div class="highlight-box">
+            <div class="no-data-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="M9 12l2 2 4-4" />
+                </svg>
+            </div>
+            <h3 data-i18n="dywHighlightTitle">🔒 Your Privacy is Our Priority</h3>
+            <p data-i18n="dywHighlightText">
+                Draw Your Way does not collect, store, or share any personal user data. We believe in providing a fun, creative physics puzzle experience without compromising your privacy.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywNotCollectTitle">What We DON'T Collect</h2>
+            <p data-i18n="dywNotCollectText">We want to be crystal clear about what we never collect:</p>
+            <ul class="check-list">
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="dywNotCollect1">No personal information – We don't ask for your name, email, phone number, or any other identifying information.</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="dywNotCollect2">No location data – We never access or track your geographic location.</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="dywNotCollect3">No contacts or photos – We have zero access to your contacts, photos, or files.</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="dywNotCollect4">No account required – Play instantly without registration or sign-up.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywTechnicalTitle">Technical Data for Performance</h2>
+            <p data-i18n="dywTechnicalText">
+                To ensure Draw Your Way runs smoothly at high frame rates and to optimize 3D physics rendering on your device, minimal anonymous technical data may be processed:
+            </p>
+            <ul>
+                <li data-i18n="dywTechnical1">Device Type & OS Version: To optimize 3D graphics and shader compatibility for your specific device.</li>
+                <li data-i18n="dywTechnical2">Crash Reports: If the app encounters an unexpected exception, anonymous logs help us resolve the issue swiftly.</li>
+                <li data-i18n="dywTechnical3">Performance Metrics: Frame rendering speed and physics calculation timing to guarantee smooth 60+ FPS gameplay.</li>
+            </ul>
+            <p style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.9rem;" data-i18n="dywTechnicalNote">
+                ⚡ This technical data is completely anonymous and cannot be used to identify you personally.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywThirdPartyTitle">Third-Party Data Sharing</h2>
+            <div class="highlight-box"
+                style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%); border-color: rgba(6, 182, 212, 0.2);">
+                <h3 style="color: #06b6d4;" data-i18n="dywNoShareTitle">🚫 We Never Share Your Data</h3>
+                <p data-i18n="dywNoShareText">
+                    Under no circumstances do we sell, rent, trade, or share any data with third parties. Your gaming experience stays strictly between you and Draw Your Way.
+                </p>
+            </div>
+            <p data-i18n="dywThirdPartyText">
+                We do not integrate third-party ad tracking networks or analytics trackers that profile user behaviors across apps.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywStorageTitle">Data Storage</h2>
+            <p data-i18n="dywStorageText">
+                All your game progress, level unlock status, star ratings, and custom drawing scores are stored <strong>locally on your device</strong>. This means:
+            </p>
+            <ul>
+                <li data-i18n="dywStorage1">Your data never leaves your device</li>
+                <li data-i18n="dywStorage2">You maintain complete control over your saved progress</li>
+                <li data-i18n="dywStorage3">Uninstalling the app cleanly removes all associated local game files</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywChildrenTitle">Children's Privacy</h2>
+            <p data-i18n="dywChildrenText">
+                Draw Your Way is designed to be family-friendly and safe for players of all ages. Because we do not collect any personal data, there is no risk of children's information being collected or misused. Parents can feel confident letting children enjoy drawing creative 3D bridges and puzzles.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywChangesTitle">Changes to This Policy</h2>
+            <p data-i18n="dywChangesText">
+                We may periodically update this policy to reflect any updates to the game. Changes will be posted here with an updated revision date.
+            </p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="dywContactTitle">Contact Us</h2>
+            <p data-i18n="dywContactText">
+                If you have questions or feedback regarding Draw Your Way or our privacy practices, please contact us:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:contact@devlaststudio.com"
+                    style="color: var(--color-accent-primary);">contact@devlaststudio.com</a>
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="privacy.html" class="footer-link" data-i18n="footerPrivacy">Privacy Policy</a>
+                    <a href="index.html#apps" class="footer-link" data-i18n="footerApps">Apps</a>
+                    <a href="index.html#contact" class="footer-link" data-i18n="footerContact">Contact</a>
+                </div>
+
+                <p class="footer-copyright" data-i18n="footerCopyright">
+                    © 2026 DevLastStudio. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

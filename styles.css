@@ -886,6 +886,11 @@ ol {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.05) 100%);
 }
 
+.app-icon-image-draw {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+}
+
+
 .app-card-link {
   display: block;
   cursor: pointer;
