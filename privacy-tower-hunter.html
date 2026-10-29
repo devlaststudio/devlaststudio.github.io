@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tower Hunter Privacy Policy - What data the game, Google AdMob and app store purchases use, and how you can control it.">
+    <meta name="robots" content="noindex">
+
+    <title>Tower Hunter - Privacy Policy | DevLastStudio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="tower-hunter-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(59, 130, 246, 0.1) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .app-badge svg {
+            width: 24px;
+            height: 24px;
+            stroke: #06b6d4;
+        }
+
+        .app-badge span {
+            font-weight: 600;
+            color: #38bdf8;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .highlight-box h3 {
+            color: #22c55e;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .highlight-box p {
+            color: var(--color-text-secondary);
+            margin: 0;
+        }
+
+        .no-data-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: rgba(34, 197, 94, 0.1);
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .no-data-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #22c55e;
+        }
+
+        .privacy-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .privacy-section h2 {
+            margin-bottom: 1rem;
+        }
+
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-text-secondary);
+        }
+
+        .check-list li svg {
+            width: 20px;
+            height: 20px;
+            stroke: #22c55e;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .privacy-section a.inline-link {
+            color: var(--color-accent-primary);
+            word-break: break-word;
+        }
+
+        .link-list {
+            margin-top: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">D</div>
+                <span class="logo-text">DevLastStudio</span>
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                <li><a href="index.html#features" class="nav-link" data-i18n="navFeatures">Features</a></li>
+                <li><a href="index.html#apps" class="nav-link" data-i18n="navApps">Apps</a></li>
+                <li><a href="index.html#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- Language Selector -->
+                <div class="lang-selector" id="lang-selector">
+                    <button class="lang-btn" id="lang-btn" aria-label="Select language" aria-expanded="false"
+                        aria-haspopup="listbox">
+                        <span id="current-flag">🇬🇧</span>
+                        <span id="current-lang">EN</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown" role="listbox" aria-label="Select language">
+                        <button class="lang-option" data-lang="en" role="option">
+                            <span>🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="de" role="option">
+                            <span>🇩🇪</span> Deutsch
+                        </button>
+                        <button class="lang-option" data-lang="es" role="option">
+                            <span>🇪🇸</span> Español
+                        </button>
+                        <button class="lang-option" data-lang="fr" role="option">
+                            <span>🇫🇷</span> Français
+                        </button>
+                        <button class="lang-option" data-lang="it" role="option">
+                            <span>🇮🇹</span> Italiano
+                        </button>
+                        <button class="lang-option" data-lang="tr" role="option">
+                            <span>🇹🇷</span> Türkçe
+                        </button>
+                    </div>
+                </div>
+
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="app-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                    <rect x="7" y="3" width="10" height="5" rx="1" />
+                    <rect x="6" y="8" width="12" height="9" rx="1" />
+                    <circle cx="8" cy="20" r="2" />
+                    <circle cx="16" cy="20" r="2" />
+                </svg>
+                <span>Tower Hunter</span>
+            </div>
+            <h1 class="page-title" data-i18n="thPrivacyTitle">Privacy Policy</h1>
+            <p class="page-subtitle" data-i18n="thPrivacySubtitle">Last updated: October 29, 2026</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <main class="page-content container">
+
+        <div class="highlight-box">
+            <div class="no-data-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="M9 12l2 2 4-4" />
+                </svg>
+            </div>
+            <h3 data-i18n="thHighlightTitle">🔒 Privacy at a Glance</h3>
+            <p data-i18n="thHighlightText">Tower Hunter needs no account and never asks for your name, email or phone number. Your progress is saved on your device. The game shows ads through Google AdMob and sells optional in-game items through Google Play and the App Store; these services process some device data as described below.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2 data-i18n="thWhoTitle">Who We Are</h2>
+            <p data-i18n="thWhoText">Tower Hunter is developed and published by DevLastStudio ("we", "us"). We are responsible for this game and this policy. You can reach us at any time at contact@devlaststudio.com.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thNotCollectTitle">What We Don't Collect</h2>
+            <p data-i18n="thNotCollectText">We do not run our own user accounts, analytics or tracking. The game does not ask for or access:</p>
+            <ul class="check-list">
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="thNotCollect1">Your name, email address, phone number or any other contact details</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="thNotCollect2">Your precise (GPS) location</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="thNotCollect3">Your contacts, photos, files, camera or microphone</span>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <span data-i18n="thNotCollect4">Your payment card or bank details – payments are handled entirely by Google Play or the App Store</span>
+                </li>
+            </ul>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thDeviceTitle">Data Stored on Your Device</h2>
+            <p data-i18n="thDeviceText">Your game progress, settings, unlocked heroes, weapons and gear, and a record of completed purchases (so an item is not delivered twice) are stored locally on your device. This data is not sent to us. Uninstalling the game or clearing its app data deletes it.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thAdsTitle">Advertising (Google AdMob)</h2>
+            <p data-i18n="thAdsText">Tower Hunter shows ads provided by Google AdMob, mostly optional rewarded videos that you choose to watch for an in-game bonus. To show, measure and limit ads and to prevent fraud, Google may collect and process:</p>
+            <ul>
+                <li data-i18n="thAds1">Your device's advertising ID (Android Advertising ID / Apple IDFA where permitted)</li>
+                <li data-i18n="thAds2">IP address and approximate location derived from it</li>
+                <li data-i18n="thAds3">Device and app information such as model, operating system, language and app version</li>
+                <li data-i18n="thAds4">Ad interactions, such as ads shown, clicks and completed videos</li>
+            </ul>
+            <p data-i18n="thAdsGoogle">Google acts as an independent controller for this data. Learn more in Google's policies:</p>
+            <ul class="link-list">
+                <li><a class="inline-link" href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from apps that use its services</a></li>
+                <li><a class="inline-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+                <li><a class="inline-link" href="https://adssettings.google.com" target="_blank" rel="noopener">Google ad settings</a></li>
+            </ul>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thConsentTitle">Your Choices and Consent</h2>
+            <ul>
+                <li data-i18n="thConsent1">Players in the European Economic Area, the United Kingdom and Switzerland are asked for consent through Google's consent form before personalized ads are shown.</li>
+                <li data-i18n="thConsent2">You can review or change your choice at any time in the game under Settings → Privacy.</li>
+                <li data-i18n="thConsent3">You can reset or delete your advertising ID, or opt out of personalized ads, in your device settings (Android: Settings → Google → Ads; iOS: Settings → Privacy & Security → Tracking).</li>
+                <li data-i18n="thConsent4">If you decline, you may still see non-personalized ads, and all game features remain available.</li>
+            </ul>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thPurchaseTitle">In-App Purchases</h2>
+            <p data-i18n="thPurchaseText">Optional purchases are processed by Google Play or the Apple App Store under their own terms and privacy policies. We never see your payment details. To deliver your item, the game receives the order confirmation (product ID, order number and purchase token) and verifies it on your device. We do not store this information on our servers.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thDownloadsTitle">Game Content Downloads</h2>
+            <p data-i18n="thDownloadsText">To keep the app small, some worlds are downloaded from our content server (towerhunter.devlaststudio.com, served via Cloudflare). Like any website, the server receives your IP address and basic request information in order to deliver the files. We do not use this to identify you; temporary server logs are kept only for security and reliability.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thPermissionsTitle">Device Permissions</h2>
+            <p data-i18n="thPermissionsText">On Android the game uses only these permissions:</p>
+            <ul>
+                <li data-i18n="thPermission1">Internet and network state – to download content, load ads and complete purchases</li>
+                <li data-i18n="thPermission2">Vibration – for haptic feedback during battles</li>
+                <li data-i18n="thPermission3">Advertising ID (AD_ID) – added by the Google Mobile Ads SDK</li>
+            </ul>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thRetentionTitle">Data Retention and Deletion</h2>
+            <p data-i18n="thRetentionText">We do not keep personal data about you on our own servers, so there is no account to delete. Local game data is removed when you uninstall the game. To delete advertising data held by Google, use your Google account and device ad settings. If you have any request, email us and we will help.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thChildrenTitle">Children's Privacy</h2>
+            <p data-i18n="thChildrenText">Tower Hunter is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thRightsTitle">Your Rights</h2>
+            <p data-i18n="thRightsText">Depending on where you live (for example under the EU/UK GDPR, the Turkish KVKK or US state laws such as the CCPA), you may have the right to access, correct or delete your personal data, to object to or restrict its processing, and to withdraw consent. We do not sell your personal information. To exercise your rights, contact us at the address below; you may also lodge a complaint with your local data protection authority.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thSecurityTitle">Security</h2>
+            <p data-i18n="thSecurityText">Game content and purchase confirmations are transferred over encrypted HTTPS connections, and downloaded content packages are verified with a digital signature before use.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thChangesTitle">Changes to This Policy</h2>
+            <p data-i18n="thChangesText">We may update this policy when the game changes. The new version will be posted on this page with an updated date.</p>
+        </div>
+        <div class="privacy-section">
+            <h2 data-i18n="thContactTitle">Contact Us</h2>
+            <p data-i18n="thContactText">If you have any questions about this policy or your data, please contact us:</p>
+            <p>
+                <strong>DevLastStudio</strong><br>
+                <strong>Email:</strong> <a href="mailto:contact@devlaststudio.com"
+                    style="color: var(--color-accent-primary);">contact@devlaststudio.com</a>
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="privacy.html" class="footer-link" data-i18n="footerPrivacy">Privacy Policy</a>
+                    <a href="index.html#apps" class="footer-link" data-i18n="footerApps">Apps</a>
+                    <a href="index.html#contact" class="footer-link" data-i18n="footerContact">Contact</a>
+                </div>
+
+                <p class="footer-copyright" data-i18n="footerCopyright">
+                    © 2026 DevLastStudio. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
