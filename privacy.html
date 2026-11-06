@@ -10,6 +10,13 @@
 
     <title>Privacy Policy | DevLastStudio</title>
 
+    <!-- Keeps the Play Store policy link working -->
+    <script>
+        if (new URLSearchParams(location.search).get("app") === "police-scanner") {
+            location.replace("privacy-police-scanner.html");
+        }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%236366f1' rx='20' width='100' height='100'/><text x='50' y='65' text-anchor='middle' fill='white' font-size='50' font-family='system-ui'>D</text></svg>">
